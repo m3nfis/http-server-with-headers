@@ -4,7 +4,7 @@
 
 # http-server: a simple static HTTP server
 
-`http-server` is a simple, zero-configuration command-line static HTTP server.  It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development and learning.
+`http-server-with-headers` is a simple, zero-configuration command-line static HTTP server.  It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development and learning.
 
 ![Example of running http-server](https://github.com/http-party/http-server/raw/master/screenshots/public.png)
 
@@ -14,25 +14,25 @@
 
 Using `npx` you can run the script without installing it first:
 
-    npx http-server [path] [options]
+    npx http-server-with-headers [path] [options]
 
 #### Globally via `npm`
 
-    npm install --global http-server
+    npm install --global http-server-with-headers
 
 This will install `http-server` globally so that it may be run from the command line anywhere.
 
 #### Globally via Homebrew
 
-    brew install http-server
+    brew install http-server-with-headers
      
 #### As a dependency in your `npm` package:
 
-    npm install http-server
+    npm install http-server-with-headers
 
 ## Usage:
 
-     http-server [path] [options]
+    http-server-with-headers [path] [options]
 
 `[path]` defaults to `./public` if the folder exists, and `./` otherwise.
 
@@ -81,7 +81,7 @@ This will install `http-server` globally so that it may be run from the command 
 To implement a catch-all redirect, use the index page itself as the proxy with:
 
 ```
-http-server --proxy http://localhost:8080?
+http-server-with-headers --proxy http://localhost:8080?
 ```
 
 Note the `?` at the end of the proxy URL. Thanks to [@houston3](https://github.com/houston3) for this clever hack!
@@ -101,7 +101,7 @@ This generates a cert-key pair and it will be valid for 3650 days (about 10 year
 Then you need to run the server with `-S` for enabling SSL and `-C` for your certificate file.
 
 ``` sh
-http-server -S -C cert.pem
+http-server-with-headers -S -C cert.pem
 ```
 
 If you wish to use a passphrase with your private key you can include one in the openssl command via the -passout parameter (using password of foobar)
@@ -118,7 +118,7 @@ This is what should be output if successful:
 ``` sh
 Starting up http-server, serving ./ through https
 
-http-server settings:
+http-server-with-headers settings:
 CORS: disabled
 Cache: 3600 seconds
 Connection Timeout: 120 seconds
