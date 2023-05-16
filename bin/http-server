@@ -152,6 +152,7 @@ function listen(port) {
     proxyOptions: proxyOptions,
     showDotfiles: argv.dotfiles,
     mimetypes: argv.mimetypes,
+    headers: argv.headers,
     username: argv.username || process.env.NODE_HTTP_SERVER_USERNAME,
     password: argv.password || process.env.NODE_HTTP_SERVER_PASSWORD
   };
@@ -162,6 +163,7 @@ function listen(port) {
       options.corsHeaders = argv.cors;
     }
   }
+  
 
   if (proxy) {
     try {
