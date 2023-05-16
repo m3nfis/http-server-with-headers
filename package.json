@@ -1,5 +1,5 @@
 {
-  "name": "http-server",
+  "name": "http-server-with-headers",
   "version": "14.1.1",
   "description": "A simple zero-configuration command-line http server",
   "main": "./lib/http-server",
@@ -8,7 +8,7 @@
     "url": "git://github.com/m3nfis/http-server-with-headers.git"
   },
   "publishConfig": {
-  "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "cli",
