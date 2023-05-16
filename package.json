@@ -1,5 +1,5 @@
 {
-  "name": "http-server-with-headers",
+  "name": "@m3nfis/http-server-with-headers",
   "version": "14.1.1",
   "description": "A simple zero-configuration command-line http server",
   "main": "./lib/http-server",
